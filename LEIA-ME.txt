@@ -1,0 +1,20 @@
+MANTO RESENHA — VERCEL + SUPABASE
+
+O site está pronto com:
+- cadastro/login de clientes;
+- sacola pedindo CEP e endereço antes do WhatsApp;
+- mensagem do WhatsApp com produtos, tamanhos, quantidades, CEP e endereço;
+- painel administrativo em /gestao-mr-7x29q.html;
+- painel com interesses, clientes cadastrados e catálogo.
+
+IMPORTANTE: a senha do administrador NÃO foi gravada no código do site. Isso evita expor sua senha para qualquer visitante.
+
+ATIVAÇÃO (uma vez):
+1. Crie/abra um projeto no Supabase.
+2. Em Project Settings > API, copie Project URL e anon/public key.
+3. Cole em supabase-config.js.
+4. No SQL Editor, execute SUPABASE_SETUP.sql.
+5. Em Authentication > Users, crie o usuário administrador com o e-mail jvsoubihe@gmail.com e a senha que você escolheu.
+6. Faça deploy desta pasta/ZIP na Vercel.
+
+O e-mail autorizado como administrador está protegido pelas regras RLS do banco.
