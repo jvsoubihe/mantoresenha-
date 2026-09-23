@@ -8,3 +8,6 @@
 
 /* Cadastro, checkout e conta */
 .checkoutBox{margin-top:24px;padding-top:18px;border-top:1px solid #ddd}.checkoutBox h3{margin-bottom:5px}.checkoutBox p{font-size:12px;color:#666}.fieldLabel{display:block;font-size:12px;font-weight:700;margin:12px 0 5px}.checkoutInput{width:100%;padding:12px;border:1px solid #cfc8bb;background:#fff;border-radius:5px}.formMsg{font-size:12px;color:#8b2d22}.actionBtn{width:100%;padding:13px;border:0;background:var(--g);color:#fff;margin-top:10px}.actionBtn.secondary{background:#fff;color:var(--g);border:1px solid var(--g)}.authBtns{display:grid;grid-template-columns:1fr 1fr;gap:8px}.notice{padding:14px;background:#fff3cd;border-radius:6px;font-size:13px}.accountHello{padding:15px;background:#fff;border-radius:6px}.checkoutBox .whats{border:0;cursor:pointer}.mobileNav{grid-template-columns:repeat(5,1fr)}
+
+/* Conta — versão oficial */
+.accountIntro{font-size:13px;line-height:1.55;color:#59645f}.adminShortcut{display:block;text-align:center;text-decoration:none}.formMsg{line-height:1.45}.formMsg b{color:var(--ink)}

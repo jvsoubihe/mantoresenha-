@@ -1,0 +1,12 @@
+{
+  "headers": [
+    {
+      "source": "/supabase-config.js",
+      "headers": [{ "key": "Cache-Control", "value": "no-store, max-age=0" }]
+    },
+    {
+      "source": "/products.json",
+      "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
+    }
+  ]
+}

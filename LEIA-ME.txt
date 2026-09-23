@@ -1,20 +1,31 @@
-MANTO RESENHA — VERCEL + SUPABASE
+MANTO RESENHA — VERSÃO OFICIAL (Vercel + Supabase)
 
-O site está pronto com:
-- cadastro/login de clientes;
-- sacola pedindo CEP e endereço antes do WhatsApp;
-- mensagem do WhatsApp com produtos, tamanhos, quantidades, CEP e endereço;
-- painel administrativo em /gestao-mr-7x29q.html;
-- painel com interesses, clientes cadastrados e catálogo.
+PRONTO NESTA VERSÃO
+- Cadastro e login de clientes via Supabase.
+- O site já está conectado ao projeto Supabase informado pelo proprietário.
+- Admin autorizado: jvsoubihe@gmail.com.
+- A senha do admin NÃO fica no código. Use a senha da conta cadastrada no Supabase.
+- Painel administrativo: gestao-mr-7x29q.html
+- Admin pode adicionar camisas, editar camisas adicionadas, excluir, ocultar/reativar e trocar tamanhos.
+- Camisas originais do products.json podem ser ocultadas/reativadas e ter tamanhos alterados sem editar o arquivo.
+- Interesses do WhatsApp e cadastros aparecem no painel.
+- Frete: entrega em todo o estado de São Paulo, calculado de acordo com o CEP.
 
-IMPORTANTE: a senha do administrador NÃO foi gravada no código do site. Isso evita expor sua senha para qualquer visitante.
+PASSO SUPABASE
+1. Abra o SQL Editor do projeto Manto Resenha.
+2. Cole TODO o arquivo SUPABASE_SETUP.sql e clique Run.
+   É seguro executá-lo novamente mesmo que uma versão anterior já tenha sido executada.
+3. Em Authentication > Providers > Email, mantenha Email habilitado.
+4. Se quiser que a conta entre imediatamente depois do cadastro, desative a exigência de confirmação de e-mail.
+   Se mantiver confirmação ligada, o site informa ao cliente que ele deve confirmar o e-mail antes de entrar.
+5. Cadastre jvsoubihe@gmail.com pelo próprio site e use essa mesma conta para entrar no painel administrativo.
 
-ATIVAÇÃO (uma vez):
-1. Crie/abra um projeto no Supabase.
-2. Em Project Settings > API, copie Project URL e anon/public key.
-3. Cole em supabase-config.js.
-4. No SQL Editor, execute SUPABASE_SETUP.sql.
-5. Em Authentication > Users, crie o usuário administrador com o e-mail jvsoubihe@gmail.com e a senha que você escolheu.
-6. Faça deploy desta pasta/ZIP na Vercel.
+SEGURANÇA
+- Nunca coloque secret key ou service_role key nos arquivos do site.
+- A chave presente em supabase-config.js é a publishable key, feita para uso no navegador.
+- O banco usa Row Level Security (RLS): somente jvsoubihe@gmail.com recebe permissões administrativas.
 
-O e-mail autorizado como administrador está protegido pelas regras RLS do banco.
+VERCEL
+- Envie os arquivos DESCOMPACTADOS para a raiz do repositório GitHub.
+- index.html precisa ficar na raiz.
+- Quando o GitHub estiver conectado à Vercel, cada commit na main cria um novo deploy automaticamente.
